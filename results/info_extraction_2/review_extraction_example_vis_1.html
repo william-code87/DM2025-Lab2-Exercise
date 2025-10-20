@@ -1,0 +1,226 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Anemone Review 
+For the horticulturally challenged, the anemone is a delicate plant that closes its petals as a storm 
+approaches. For a story about withdrawing from the world and becoming emotionally bottled up, 
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">the flower-as-metaphor title is perhaps the most on-the-nose thing</span> about Ronan Day-Lewis’ 
+feature debut. Anemone is co-written with and starring his father Daniel in his first on-screen 
+appearance since 2017’s Phantom Thread. It is <span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">sad, absurdist, brooding, tender and intense</span>. What 
+were you expecting? Broad toilet humour? 
+The dark heart of the matter is the fractured relationship between soldier siblings Ray (Daniel 
+Day-Lewis) and Jem Stoker (Sean Bean). Twenty years after tours of duty during the Troubles, 
+Ray survives off the grid in a forest (where Ocado definitely won’t deliver), living a life made up 
+of solitude, the Shipping Forecast and tinkering with electronics. In his absence, the better-
+adjusted, religious Jem has become a husband to Ray’s ex Nessa (<span class="lx-highlight" data-idx="2" style="background-color:#D2E3FC;">the ever-excellent Samantha 
+Morton</span>) and father to Ray’s twentysomething son Brian (Samuel Bottomley). 
+As they come together, the screenplay has the confidence to play early encounters without 
+dialogue, perceptively revealing the strange, often silent bonds between brothers. Gradually and 
+convincingly, the pair begin to connect. <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">Bean is subtle and superb</span> as the quieter Jem, coaxing his 
+sibling to open up, the story exploring the impact of fathers on sons, the limitations of faith, and 
+how violence only begets violence. 
+If it sounds talk-y and stage-bound, director Day-Lewis eschews kitchen-sink mundanity. While 
+<span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">he may OD on drone shots that make tree tops look like broccoli</span>, <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">he’s definitely one to watch</span>. 
+There is <span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">visual poetry</span> at play, be it in an <span class="lx-highlight" data-idx="7" style="background-color:#D2E3FC;">evocative use of slow motion</span> (dancing, fighting, 
+surprisingly similar), <span class="lx-highlight" data-idx="8" style="background-color:#D2E3FC;">striking imagery</span> (<span class="lx-highlight" data-idx="9" style="background-color:#D2E3FC;">a stunning tracking shot through a countryside 
+fairground</span>) and <span class="lx-highlight" data-idx="10" style="background-color:#D2E3FC;">a strand of Lynchian bonkersness</span> that encompasses a <span class="lx-highlight" data-idx="11" style="background-color:#D2E3FC;">freak hailstorm</span>, <span class="lx-highlight" data-idx="12" style="background-color:#D2E3FC;">a giant fish</span> 
+and, weirdest of all, <span class="lx-highlight" data-idx="13" style="background-color:#D2E3FC;">a ghostly camel-like creature with a tiny dick</span>. Mike Leigh, this is not. 
+When the story cuts back and forth to the worried Nessa and troubled Brian, it <span class="lx-highlight" data-idx="14" style="background-color:#D2E3FC;">feels a bit like 
+treading water</span> until a fantastic dinner-table confrontation. But, unsurprisingly, the film is at its 
+<span class="lx-highlight" data-idx="15" style="background-color:#D2E3FC;">most compelling</span> when observing Ray. With tightly cropped grey hair, tats and a Bill The 
+Butcher-esque ’tache, Day-Lewis is by turns <span class="lx-highlight" data-idx="16" style="background-color:#D2E3FC;">big and boisterous</span> (marvel at him riffing on God’s 
+underpants, His testicles “swinging like church bells”), then <span class="lx-highlight" data-idx="17" style="background-color:#D2E3FC;">small and shameful</span>. Early on, he 
+spins <span class="lx-highlight" data-idx="18" style="background-color:#D2E3FC;">a stunning extended scatological tale</span> that involves a priest and a Guinness-curry-laxative 
+combo that is <span class="lx-highlight" data-idx="19" style="background-color:#D2E3FC;">simultaneously funny and horrifying</span>. It instantly <span class="lx-highlight" data-idx="20" style="background-color:#D2E3FC;">takes its place in the DDL 
+Monologue Hall Of Fame</span>: some of that <span class="lx-highlight" data-idx="21" style="background-color:#D2E3FC;">unexpected broad toilet humour at its best</span>. Welcome 
+back, sir.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="21" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/22</span> |
+          Pos <span id="posInfo">[229-295]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "the flower-as-metaphor title is perhaps the most on-the-nose thing", "color": "#D2E3FC", "startPos": 229, "endPos": 295, "beforeText": "is a delicate plant that closes its petals as a storm \napproaches. For a story about withdrawing from the world and becoming emotionally bottled up, \n", "extractionText": "the flower-as-metaphor title is perhaps the most on-the-nose thing", "afterText": " about Ronan Day-Lewis\u2019 \nfeature debut. Anemone is co-written with and starring his father Daniel in his first on-screen \nappearance since 2017\u2019s Phan", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The title</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">most on-the-nose</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "sad, absurdist, brooding, tender and intense", "color": "#D2E3FC", "startPos": 463, "endPos": 507, "beforeText": "ewis\u2019 \nfeature debut. Anemone is co-written with and starring his father Daniel in his first on-screen \nappearance since 2017\u2019s Phantom Thread. It is ", "extractionText": "sad, absurdist, brooding, tender and intense", "afterText": ". What \nwere you expecting? Broad toilet humour? \nThe dark heart of the matter is the fractured relationship between soldier siblings Ray (Daniel \nDay", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Anemone</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">sad, absurdist, brooding, tender and intense</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "the ever-excellent Samantha Morton", "color": "#D2E3FC", "startPos": 1008, "endPos": 1043, "beforeText": "de, the Shipping Forecast and tinkering with electronics. In his absence, the better-\nadjusted, religious Jem has become a husband to Ray\u2019s ex Nessa (", "extractionText": "the ever-excellent Samantha \nMorton", "afterText": ") and father to Ray\u2019s twentysomething son Brian (Samuel Bottomley). \nAs they come together, the screenplay has the confidence to play early encounters", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Samantha Morton</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">ever-excellent</span>}</div>"}, {"index": 3, "class": "opinion_statement", "text": "Bean is subtle and superb", "color": "#D2E3FC", "startPos": 1342, "endPos": 1367, "beforeText": "s without \ndialogue, perceptively revealing the strange, often silent bonds between brothers. Gradually and \nconvincingly, the pair begin to connect. ", "extractionText": "Bean is subtle and superb", "afterText": " as the quieter Jem, coaxing his \nsibling to open up, the story exploring the impact of fathers on sons, the limitations of faith, and \nhow violence o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Bean</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">subtle and superb</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "he may OD on drone shots that make tree tops look like broccoli", "color": "#D2E3FC", "startPos": 1634, "endPos": 1697, "beforeText": "ons of faith, and \nhow violence only begets violence. \nIf it sounds talk-y and stage-bound, director Day-Lewis eschews kitchen-sink mundanity. While \n", "extractionText": "he may OD on drone shots that make tree tops look like broccoli", "afterText": ", he\u2019s definitely one to watch. \nThere is visual poetry at play, be it in an evocative use of slow motion (dancing, fighting, \nsurprisingly similar), ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Drone shots</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">OD on drone shots</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "he\u2019s definitely one to watch", "color": "#D2E3FC", "startPos": 1699, "endPos": 1727, "beforeText": "ds talk-y and stage-bound, director Day-Lewis eschews kitchen-sink mundanity. While \nhe may OD on drone shots that make tree tops look like broccoli, ", "extractionText": "he\u2019s definitely one to watch", "afterText": ". \nThere is visual poetry at play, be it in an evocative use of slow motion (dancing, fighting, \nsurprisingly similar), striking imagery (a stunning t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">director Day-Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">one to watch</span>}</div>"}, {"index": 6, "class": "opinion_statement", "text": "visual poetry", "color": "#D2E3FC", "startPos": 1739, "endPos": 1752, "beforeText": "Lewis eschews kitchen-sink mundanity. While \nhe may OD on drone shots that make tree tops look like broccoli, he\u2019s definitely one to watch. \nThere is ", "extractionText": "visual poetry", "afterText": " at play, be it in an evocative use of slow motion (dancing, fighting, \nsurprisingly similar), striking imagery (a stunning tracking shot through a co", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">visual poetry</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "evocative use of slow motion", "color": "#D2E3FC", "startPos": 1774, "endPos": 1802, "beforeText": "y. While \nhe may OD on drone shots that make tree tops look like broccoli, he\u2019s definitely one to watch. \nThere is visual poetry at play, be it in an ", "extractionText": "evocative use of slow motion", "afterText": " (dancing, fighting, \nsurprisingly similar), striking imagery (a stunning tracking shot through a countryside \nfairground) and a strand of Lynchian bo", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Slow motion</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">evocative use</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "striking imagery", "color": "#D2E3FC", "startPos": 1847, "endPos": 1863, "beforeText": ", he\u2019s definitely one to watch. \nThere is visual poetry at play, be it in an evocative use of slow motion (dancing, fighting, \nsurprisingly similar), ", "extractionText": "striking imagery", "afterText": " (a stunning tracking shot through a countryside \nfairground) and a strand of Lynchian bonkersness that encompasses a freak hailstorm, a giant fish \na", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Imagery</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">striking</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "a stunning tracking shot through a countryside fairground", "color": "#D2E3FC", "startPos": 1865, "endPos": 1923, "beforeText": "one to watch. \nThere is visual poetry at play, be it in an evocative use of slow motion (dancing, fighting, \nsurprisingly similar), striking imagery (", "extractionText": "a stunning tracking shot through a countryside \nfairground", "afterText": ") and a strand of Lynchian bonkersness that encompasses a freak hailstorm, a giant fish \nand, weirdest of all, a ghostly camel-like creature with a ti", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">A tracking shot</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">stunning</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "a strand of Lynchian bonkersness", "color": "#D2E3FC", "startPos": 1929, "endPos": 1961, "beforeText": "tive use of slow motion (dancing, fighting, \nsurprisingly similar), striking imagery (a stunning tracking shot through a countryside \nfairground) and ", "extractionText": "a strand of Lynchian bonkersness", "afterText": " that encompasses a freak hailstorm, a giant fish \nand, weirdest of all, a ghostly camel-like creature with a tiny dick. Mike Leigh, this is not. \nWhe", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">Lynchian bonkersness</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "freak hailstorm", "color": "#D2E3FC", "startPos": 1981, "endPos": 1996, "beforeText": "ingly similar), striking imagery (a stunning tracking shot through a countryside \nfairground) and a strand of Lynchian bonkersness that encompasses a ", "extractionText": "freak hailstorm", "afterText": ", a giant fish \nand, weirdest of all, a ghostly camel-like creature with a tiny dick. Mike Leigh, this is not. \nWhen the story cuts back and forth to ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Hailstorm</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">freak</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "a giant fish", "color": "#D2E3FC", "startPos": 1998, "endPos": 2010, "beforeText": "triking imagery (a stunning tracking shot through a countryside \nfairground) and a strand of Lynchian bonkersness that encompasses a freak hailstorm, ", "extractionText": "a giant fish", "afterText": " \nand, weirdest of all, a ghostly camel-like creature with a tiny dick. Mike Leigh, this is not. \nWhen the story cuts back and forth to the worried Ne", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Fish</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">giant</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "a ghostly camel-like creature with a tiny dick", "color": "#D2E3FC", "startPos": 2034, "endPos": 2080, "beforeText": " shot through a countryside \nfairground) and a strand of Lynchian bonkersness that encompasses a freak hailstorm, a giant fish \nand, weirdest of all, ", "extractionText": "a ghostly camel-like creature with a tiny dick", "afterText": ". Mike Leigh, this is not. \nWhen the story cuts back and forth to the worried Nessa and troubled Brian, it feels a bit like \ntreading water until a fa", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Creature</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">ghostly camel-like with a tiny dick</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "feels a bit like treading water", "color": "#D2E3FC", "startPos": 2187, "endPos": 2219, "beforeText": "hostly camel-like creature with a tiny dick. Mike Leigh, this is not. \nWhen the story cuts back and forth to the worried Nessa and troubled Brian, it ", "extractionText": "feels a bit like \ntreading water", "afterText": " until a fantastic dinner-table confrontation. But, unsurprisingly, the film is at its \nmost compelling when observing Ray. With tightly cropped grey ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The story</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">treading water</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "most compelling", "color": "#D2E3FC", "startPos": 2307, "endPos": 2322, "beforeText": " Nessa and troubled Brian, it feels a bit like \ntreading water until a fantastic dinner-table confrontation. But, unsurprisingly, the film is at its \n", "extractionText": "most compelling", "afterText": " when observing Ray. With tightly cropped grey hair, tats and a Bill The \nButcher-esque \u2019tache, Day-Lewis is by turns big and boisterous (marvel at hi", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The film</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">most compelling</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "big and boisterous", "color": "#D2E3FC", "startPos": 2440, "endPos": 2458, "beforeText": " film is at its \nmost compelling when observing Ray. With tightly cropped grey hair, tats and a Bill The \nButcher-esque \u2019tache, Day-Lewis is by turns ", "extractionText": "big and boisterous", "afterText": " (marvel at him riffing on God\u2019s \nunderpants, His testicles \u201cswinging like church bells\u201d), then small and shameful. Early on, he \nspins a stunning ext", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Day-Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">big and boisterous</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "small and shameful", "color": "#D2E3FC", "startPos": 2554, "endPos": 2572, "beforeText": "esque \u2019tache, Day-Lewis is by turns big and boisterous (marvel at him riffing on God\u2019s \nunderpants, His testicles \u201cswinging like church bells\u201d), then ", "extractionText": "small and shameful", "afterText": ". Early on, he \nspins a stunning extended scatological tale that involves a priest and a Guinness-curry-laxative \ncombo that is simultaneously funny a", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Day-Lewis</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">small and shameful</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "a stunning extended scatological tale", "color": "#D2E3FC", "startPos": 2594, "endPos": 2631, "beforeText": "and boisterous (marvel at him riffing on God\u2019s \nunderpants, His testicles \u201cswinging like church bells\u201d), then small and shameful. Early on, he \nspins ", "extractionText": "a stunning extended scatological tale", "afterText": " that involves a priest and a Guinness-curry-laxative \ncombo that is simultaneously funny and horrifying. It instantly takes its place in the DDL \nMon", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">A tale</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">stunning extended scatological</span>}</div>"}, {"index": 19, "class": "opinion_statement", "text": "simultaneously funny and horrifying", "color": "#D2E3FC", "startPos": 2700, "endPos": 2735, "beforeText": "hen small and shameful. Early on, he \nspins a stunning extended scatological tale that involves a priest and a Guinness-curry-laxative \ncombo that is ", "extractionText": "simultaneously funny and horrifying", "afterText": ". It instantly takes its place in the DDL \nMonologue Hall Of Fame: some of that unexpected broad toilet humour at its best. Welcome \nback, sir.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The tale</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">funny and horrifying</span>}</div>"}, {"index": 20, "class": "opinion_statement", "text": "takes its place in the DDL Monologue Hall Of Fame", "color": "#D2E3FC", "startPos": 2750, "endPos": 2800, "beforeText": "ning extended scatological tale that involves a priest and a Guinness-curry-laxative \ncombo that is simultaneously funny and horrifying. It instantly ", "extractionText": "takes its place in the DDL \nMonologue Hall Of Fame", "afterText": ": some of that unexpected broad toilet humour at its best. Welcome \nback, sir.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The tale</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">takes its place in the DDL Monologue Hall Of Fame</span>}</div>"}, {"index": 21, "class": "opinion_statement", "text": "unexpected broad toilet humour at its best", "color": "#D2E3FC", "startPos": 2815, "endPos": 2857, "beforeText": "ness-curry-laxative \ncombo that is simultaneously funny and horrifying. It instantly takes its place in the DDL \nMonologue Hall Of Fame: some of that ", "extractionText": "unexpected broad toilet humour at its best", "afterText": ". Welcome \nback, sir.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Toilet humour</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">unexpected broad toilet humour at its best</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
