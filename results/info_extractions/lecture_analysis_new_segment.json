@@ -1,0 +1,51 @@
+{
+    "title": "Data Mining: Introduction and Concepts",
+    "video_segment": "120:00",
+    "content_flow": [
+        {
+            "content_type": "slide_description",
+            "text": "The slide displays a table titled 'Transaction Data'. The table has columns for TID (Transaction ID), Date, and Items. The rows show sample transactions with items like Bread, Coke, and Milk. The speaker is highlighting that the order of items in a transaction does not matter."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "So the bread, Coke, milk if you do milk, Coke, Coke and bread they are the same. So then we don't care about order in transaction.",
+            "timestamp": "120:02"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "The slide is titled 'Types of Data Sets'. It shows two examples: a graph representing linked web pages and a molecular structure of Benzene (C6H6). The speaker discusses graph data and its applications."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "And then we also have the graph data. So for example, the world wide web, they are graph data. So the graph data means certain graph analysis. Uh, if you're interested in there, you actually can, uh, can took some courses, like the graph network, something like that, and then we're talking so much about how to working with that. Okay. And in chemical, uh, compound like molecule.",
+            "timestamp": "120:20"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "This slide continues 'Types of Data Sets' and lists 'Ordered Data' with sub-points: Spatial Data, Temporal Data, Sequential Data, and Genetic Sequence Data. It also shows an image of a world map with temperature variations, labeled 'Spatio-Temporal Data'."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "They also in graph data. And then we also have the something we call the ordered data. The data have the order. Ordered in space, in time. So we call this spatial, spatial thing space. Or in time. So we call this spatial means space and for time. So they are in sequence of the transaction. So it's talking about which one is important in which transaction. And the genomic sequence data, you know, sequence data actually is also important. So, but then before we go through them very quickly because we don't talking about genomic sequence data. And the, uh, association, we're talking about sequence of transaction. Spatial and temporal data, we don't really cover them. And, uh, but if you want to know a little bit more about then go to the advanced data base course, we have the spatial temporal data.",
+            "timestamp": "120:50"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "The slide is titled 'Data Quality' and features a QR code to join slido.com with the code #5216 897. It also has the text 'Dirty Data'."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "And so then next one is important. What is the issue of the data quality? So, but then wait for me to do one thing. This is the last slide to question. What challenge might arise when dealing with big data?",
+            "timestamp": "122:00"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "This slide, titled 'What challenges might arise when dealing with big data?', displays a word cloud with terms like 'Outliers', 'Noise', 'Missing Data', 'Heterogeneous Data', 'Duplicate Data', 'Wrong Data Type', 'Storage, Computing and Access Them Efficiently', and 'Data Accessing Bottleneck'."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "Currently we were having a term, we called them big data. Big data is a lot of data. So many attributes. Okay. So what could be the problem you try to dealing with it?",
+            "timestamp": "122:20"
+        }
+    ]
+}

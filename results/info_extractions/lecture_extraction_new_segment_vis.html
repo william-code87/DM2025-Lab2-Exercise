@@ -1,0 +1,221 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">key_concept</span> <span class="lx-label" style="background-color:#C8E6C9;">learning_objective</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        # LECTURE ANALYSIS: Data Mining: Introduction and Concepts
+## Video Segment: 120:00
+
+[SLIDE DESCRIPTION]
+The slide displays a table titled &#x27;Transaction Data&#x27;. The table has columns for TID (Transaction ID), Date, and Items. The rows show sample transactions with items like Bread, Coke, and Milk. The speaker is highlighting that the order of items in a transaction does not matter.
+
+[TRANSCRIPT - 120:02]
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#D2E3FC;">So the bread, Coke, milk if you do milk, Coke, Coke and bread they are the same. So then we don&#x27;t care about order in transaction.</span>
+
+[SLIDE DESCRIPTION]
+The slide is titled &#x27;Types of Data Sets&#x27;. It shows two examples: a graph representing linked web pages and a molecular structure of Benzene (C6H6). The speaker discusses graph data and its applications.
+
+[TRANSCRIPT - 120:20]
+<span class="lx-highlight" data-idx="1" style="background-color:#D2E3FC;">And then we also have the graph data. So for example, the world wide web, they are graph data.</span> So the graph data means certain graph analysis. Uh, <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">if you&#x27;re interested in there, you actually can, uh, can took some courses, like the graph network, something like that, and then we&#x27;re talking so much about how to working with that.</span> Okay. And in chemical, uh, compound like molecule.
+
+[SLIDE DESCRIPTION]
+This slide continues &#x27;Types of Data Sets&#x27; and lists &#x27;Ordered Data&#x27; with sub-points: Spatial Data, Temporal Data, Sequential Data, and Genetic Sequence Data. It also shows an image of a world map with temperature variations, labeled &#x27;<span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">Spatio-Temporal Data</span>&#x27;.
+
+[TRANSCRIPT - 120:50]
+They also in graph data. <span class="lx-highlight" data-idx="4" style="background-color:#D2E3FC;">And then we also have the something we call the ordered data. The data have the order. Ordered in space, in time. So we call this spatial, spatial thing space. Or in time. So we call this spatial means space and for time. So they are in sequence of the transaction. So it&#x27;s talking about which one is important in which transaction. And the genomic sequence data, you know, sequence data actually is also important.</span> So, but then before we go through them very quickly because we don&#x27;t talking about genomic sequence data. And the, uh, association, we&#x27;re talking about sequence of transaction. Spatial and temporal data, we don&#x27;t really cover them. And, uh, but if you want to know a little bit more about then go to the advanced data base course, we have the spatial temporal data.
+
+[SLIDE DESCRIPTION]
+The slide is titled &#x27;Data Quality&#x27; and features a QR code to join slido.com with the code #5216 897. It also has the text &#x27;Dirty Data&#x27;.
+
+[TRANSCRIPT - 122:00]
+And so then next one is important. What is the issue of the data quality? So, but then wait for me to do one thing. This is the last slide to question. What challenge might arise when dealing with big data?
+
+[SLIDE DESCRIPTION]
+This slide, titled &#x27;What challenges might arise when dealing with big data?&#x27;, displays a word cloud with terms like &#x27;Outliers&#x27;, &#x27;Noise&#x27;, &#x27;Missing Data&#x27;, &#x27;Heterogeneous Data&#x27;, &#x27;Duplicate Data&#x27;, &#x27;Wrong Data Type&#x27;, &#x27;Storage, Computing and Access Them Efficiently&#x27;, and &#x27;Data Accessing Bottleneck&#x27;.
+
+[TRANSCRIPT - 122:20]
+Currently we were having a term, we called them big data. <span class="lx-highlight" data-idx="5" style="background-color:#D2E3FC;">Big data is a lot of data. So many attributes.</span> Okay. So <span class="lx-highlight" data-idx="6" style="background-color:#C8E6C9;">what</span> could be the problem you try to dealing with it?
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="6" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/7</span> |
+          Pos <span id="posInfo">[406-536]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "key_concept", "text": "So the bread, Coke, milk if you do milk, Coke, Coke and bread they are the same. So then we don't care about order in transaction.", "color": "#D2E3FC", "startPos": 406, "endPos": 536, "beforeText": "s with items like Bread, Coke, and Milk. The speaker is highlighting that the order of items in a transaction does not matter.\n\n[TRANSCRIPT - 120:02]\n", "extractionText": "So the bread, Coke, milk if you do milk, Coke, Coke and bread they are the same. So then we don&#x27;t care about order in transaction.", "afterText": "\n\n[SLIDE DESCRIPTION]\nThe slide is titled &#x27;Types of Data Sets&#x27;. It shows two examples: a graph representing linked web pages and a molecular structure", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Transaction Data Order Invariance</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">The order of items within a transaction does not affect the transaction&#x27;s identity or meaning.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">In transaction data, like a shopping list, it doesn&#x27;t matter if you list &#x27;milk, bread&#x27; or &#x27;bread, milk&#x27;; it&#x27;s the same purchase.</span>}</div>"}, {"index": 1, "class": "key_concept", "text": "And then we also have the graph data. So for example, the world wide web, they are graph data.", "color": "#D2E3FC", "startPos": 784, "endPos": 878, "beforeText": "resenting linked web pages and a molecular structure of Benzene (C6H6). The speaker discusses graph data and its applications.\n\n[TRANSCRIPT - 120:20]\n", "extractionText": "And then we also have the graph data. So for example, the world wide web, they are graph data.", "afterText": " So the graph data means certain graph analysis. Uh, if you&#x27;re interested in there, you actually can, uh, can took some courses, like the graph networ", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Graph Data</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Data that can be represented as a graph, consisting of nodes (vertices) and edges (connections). The World Wide Web is an example.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Data where items are connected to each other, like social networks or web pages linked together.</span>}</div>"}, {"index": 2, "class": "learning_objective", "text": "if you're interested in there, you actually can, uh, can took some courses, like the graph network, something like that, and then we're talking so much about how to working with that.", "color": "#C8E6C9", "startPos": 931, "endPos": 1114, "beforeText": "0]\nAnd then we also have the graph data. So for example, the world wide web, they are graph data. So the graph data means certain graph analysis. Uh, ", "extractionText": "if you&#x27;re interested in there, you actually can, uh, can took some courses, like the graph network, something like that, and then we&#x27;re talking so much about how to working with that.", "afterText": " Okay. And in chemical, uh, compound like molecule.\n\n[SLIDE DESCRIPTION]\nThis slide continues &#x27;Types of Data Sets&#x27; and lists &#x27;Ordered Data&#x27; with sub-p", "attributesHtml": "<div><strong>class:</strong> learning_objective</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">stated_objective</span>: <span class=\"lx-attr-value\">if you&#x27;re interested in there, you actually can, uh, can took some courses, like the graph network, something like that, and then we&#x27;re talking so much about how to working with that.</span>, <span class=\"lx-attr-key\">topic_covered</span>: <span class=\"lx-attr-value\">Graph Network Analysis</span>, <span class=\"lx-attr-key\">expected_skill</span>: <span class=\"lx-attr-value\">learn how to work with graph data</span>}</div>"}, {"index": 3, "class": "key_concept", "text": "Spatio-Temporal Data", "color": "#D2E3FC", "startPos": 1420, "endPos": 1440, "beforeText": " Spatial Data, Temporal Data, Sequential Data, and Genetic Sequence Data. It also shows an image of a world map with temperature variations, labeled &#x27;", "extractionText": "Spatio-Temporal Data", "afterText": "&#x27;.\n\n[TRANSCRIPT - 120:50]\nThey also in graph data. And then we also have the something we call the ordered data. The data have the order. Ordered in s", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Spatio-Temporal Data</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Data that has both spatial and temporal components, describing phenomena that change over both space and time.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Information that tracks how something changes across both location and time, like weather patterns or the spread of a disease.</span>}</div>"}, {"index": 4, "class": "key_concept", "text": "And then we also have the something we call the ordered data. The data have the order. Ordered in space, in time. So we call this spatial, spatial thing space. Or in time. So we call this spatial means space and for time. So they are in sequence of the transaction. So it's talking about which one is important in which transaction. And the genomic sequence data, you know, sequence data actually is also important.", "color": "#D2E3FC", "startPos": 1491, "endPos": 1906, "beforeText": "a. It also shows an image of a world map with temperature variations, labeled &#x27;Spatio-Temporal Data&#x27;.\n\n[TRANSCRIPT - 120:50]\nThey also in graph data. ", "extractionText": "And then we also have the something we call the ordered data. The data have the order. Ordered in space, in time. So we call this spatial, spatial thing space. Or in time. So we call this spatial means space and for time. So they are in sequence of the transaction. So it&#x27;s talking about which one is important in which transaction. And the genomic sequence data, you know, sequence data actually is also important.", "afterText": " So, but then before we go through them very quickly because we don&#x27;t talking about genomic sequence data. And the, uh, association, we&#x27;re talking abo", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Ordered Data</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">Data where the sequence or order of elements is significant, including spatial, temporal, sequential, and genomic sequence data.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Intermediate</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Data where the order matters, like a series of events over time, steps in a process, or the sequence of DNA bases.</span>}</div>"}, {"index": 5, "class": "key_concept", "text": "Big data is a lot of data. So many attributes.", "color": "#D2E3FC", "startPos": 3057, "endPos": 3103, "beforeText": "uting and Access Them Efficiently&#x27;, and &#x27;Data Accessing Bottleneck&#x27;.\n\n[TRANSCRIPT - 122:20]\nCurrently we were having a term, we called them big data. ", "extractionText": "Big data is a lot of data. So many attributes.", "afterText": " Okay. So what could be the problem you try to dealing with it?\n", "attributesHtml": "<div><strong>class:</strong> key_concept</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">concept_name</span>: <span class=\"lx-attr-value\">Big Data</span>, <span class=\"lx-attr-key\">definition</span>: <span class=\"lx-attr-value\">A large volume of data with many attributes.</span>, <span class=\"lx-attr-key\">difficulty_rating</span>: <span class=\"lx-attr-value\">Beginner</span>, <span class=\"lx-attr-key\">simplified_explanation</span>: <span class=\"lx-attr-value\">Refers to datasets that are extremely large and complex, making them difficult to manage and analyze with traditional data processing tools.</span>}</div>"}, {"index": 6, "class": "learning_objective", "text": "What challenge might arise when dealing with big data?", "color": "#C8E6C9", "startPos": 3113, "endPos": 3117, "beforeText": "Bottleneck&#x27;.\n\n[TRANSCRIPT - 122:20]\nCurrently we were having a term, we called them big data. Big data is a lot of data. So many attributes. Okay. So ", "extractionText": "what", "afterText": " could be the problem you try to dealing with it?\n", "attributesHtml": "<div><strong>class:</strong> learning_objective</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">stated_objective</span>: <span class=\"lx-attr-value\">What challenge might arise when dealing with big data?</span>, <span class=\"lx-attr-key\">topic_covered</span>: <span class=\"lx-attr-value\">Big Data Challenges</span>, <span class=\"lx-attr-key\">expected_skill</span>: <span class=\"lx-attr-value\">identify</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
